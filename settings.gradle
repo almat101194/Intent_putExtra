@@ -1,0 +1,2 @@
+rootProject.name='My Application putExtra Intent'
+include ':app'
