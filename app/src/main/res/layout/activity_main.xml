@@ -80,4 +80,18 @@
         android:layout_gravity="center_horizontal"
         android:text="Date">
     </Button>
+    <Button
+        android:id="@+id/bTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="TimeInfo">
+    </Button>
+    <Button
+        android:id="@+id/bDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="DateInfo">
+    </Button>
 </LinearLayout>

@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
         btnDate.setOnClickListener(this)
         btnTime.setOnClickListener(this)
+        bTime.setOnClickListener(this)
+        bDate.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -31,6 +33,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btnDate -> {
                 intent = Intent("kz.almat.intent.action.showDate")
+                startActivity(intent)
+            }
+            R.id.bTime -> {
+                intent = Intent("kz.info.intent.action.showTime")
+                startActivity(intent)
+            }
+            R.id.bDate -> {
+                intent = Intent("kz.info.intent.action.showDate")
                 startActivity(intent)
             }
         }
