@@ -66,4 +66,18 @@
         android:layout_gravity="center_horizontal"
         android:text="Submit">
     </Button>
+    <Button
+        android:id="@+id/btnTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Time">
+    </Button>
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Date">
+    </Button>
 </LinearLayout>

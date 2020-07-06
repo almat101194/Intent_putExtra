@@ -3,9 +3,10 @@ package kz.almat.myapplicationputextraintent
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,6 +17,22 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("Fname", edText1.text.toString())
             intent.putExtra("Lname", edText2.text.toString())
             startActivity(intent)
+        }
+        btnDate.setOnClickListener(this)
+        btnTime.setOnClickListener(this)
+    }
+
+    override fun onClick(v: View?) {
+        var intent: Intent
+        when (v!!.id) {
+            R.id.btnTime -> {
+                intent = Intent("kz.almat.intent.action.showTime")
+                startActivity(intent)
+            }
+            R.id.btnDate -> {
+                intent = Intent("kz.almat.intent.action.showDate")
+                startActivity(intent)
+            }
         }
     }
 }
